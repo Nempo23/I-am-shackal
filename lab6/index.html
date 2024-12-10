@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Анкета опитування</title>
+</head>
+<body>
+
+<h2>Анкета опитування</h2>
+
+<form action="http://localhost/lab6/submit.php" method="POST">
+    <label for="name">Ім'я:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="question1">Яка ваша улюблена мова програмування?</label><br>
+    <select id="question1" name="question1" required>
+        <option value="PHP">PHP</option>
+        <option value="Python">Python</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="C++">C++</option>
+    </select><br><br>
+
+    <label for="question2">Як часто ви програмуєте?</label><br>
+    <input type="radio" id="daily" name="question2" value="Щодня" required>
+    <label for="daily">Щодня</label><br>
+    <input type="radio" id="weekly" name="question2" value="Щотижня">
+    <label for="weekly">Щотижня</label><br>
+    <input type="radio" id="rarely" name="question2" value="Рідко">
+    <label for="rarely">Рідко</label><br><br>
+
+    <label for="question3">Ваше улюблене хобі:</label><br>
+    <textarea id="question3" name="question3" rows="4" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Відправити">
+</form>
+
+</body>
+</html>
